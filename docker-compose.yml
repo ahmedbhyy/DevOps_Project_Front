@@ -2,14 +2,14 @@ version: '3'
 services:
   frontend:
     build:
-      context: ./pipeline2  # Path to your frontend Dockerfile directory
+      context: ../pipeline2  # Path to your frontend Dockerfile directory
       dockerfile: Dockerfile
     ports:
       - "3000:3000"  # Map container port 3000 to host port 3000
 
   backend:
     build:
-      context: ./pipeline1  # Path to your backend Dockerfile directory
+      context: ../pipeline1  # Path to your backend Dockerfile directory
       dockerfile: Dockerfile
     ports:
       - "8000:8000"  # Map container port 8000 to host port 8000
